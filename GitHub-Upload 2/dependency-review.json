@@ -1,0 +1,144 @@
+[
+  {
+    "name": "react",
+    "version": "19.3.1",
+    "license": "MIT",
+    "engines": {
+      "node": ">=0.10.0"
+    },
+    "scripts": null,
+    "dependencies": null,
+    "peerDependencies": null
+  },
+  {
+    "name": "react-dom",
+    "version": "19.3.1",
+    "license": "MIT",
+    "engines": null,
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "scheduler": "^0.28.0"
+    },
+    "peerDependencies": {
+      "react": "^19.3.1"
+    }
+  },
+  {
+    "name": "three",
+    "version": "0.186.1",
+    "license": "MIT",
+    "engines": null,
+    "scripts": {
+      "dev": "node utils/build/dev.js && node utils/server.js -p 8080",
+      "lint": "npm run lint-core",
+      "test": "npm run lint && npm run test-unit && npm run test-unit-addons",
+      "build": "rollup -c utils/build/rollup.config.js",
+      "start": "npm run dev",
+      "preview": "node utils/build/preview.js",
+      "lint-fix": "npm run lint-core -- --fix && npm run lint-addons -- --fix && npm run lint-examples -- --fix && npm run lint-editor -- --fix && npm run lint-manual -- --fix && npm run lint-test -- --fix && npm run lint-utils -- --fix && npm run lint-tsl -- --fix",
+      "lint-tsl": "eslint tsl",
+      "test-e2e": "node test/e2e/puppeteer.js",
+      "lint-core": "eslint src",
+      "lint-test": "eslint test",
+      "test-unit": "node test/unit/puppeteer.unit.js --testPage=UnitTests.html --mode=headless",
+      "build-docs": "jsdoc -c utils/docs/jsdoc.config.json && npm run build-llms",
+      "build-llms": "node utils/llms/build.js",
+      "lint-utils": "eslint utils",
+      "lint-addons": "eslint examples/jsm",
+      "lint-editor": "eslint editor",
+      "lint-manual": "eslint manual",
+      "test-e2e-cov": "node test/e2e/check-coverage.js",
+      "lint-examples": "eslint examples",
+      "test-treeshake": "rollup -c test/rollup.treeshake.config.js",
+      "make-screenshot": "node test/e2e/puppeteer.js --make",
+      "test-e2e-webgpu": "node test/e2e/puppeteer.js --webgpu",
+      "test-unit-addons": "node test/unit/puppeteer.unit.js --testPage=UnitTestsAddons.html --mode=headless",
+      "test-unit-headful": "node test/unit/puppeteer.unit.js --testPage=UnitTests.html --mode=headful",
+      "test-unit-addons-headful": "node test/unit/puppeteer.unit.js --testPage=UnitTestsAddons.html --mode=headful"
+    },
+    "dependencies": null,
+    "peerDependencies": null
+  },
+  {
+    "name": "gsap",
+    "version": "3.15.0",
+    "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+    "engines": null,
+    "scripts": null,
+    "dependencies": null,
+    "peerDependencies": null
+  },
+  {
+    "name": "@gsap/react",
+    "version": "2.1.2",
+    "license": "SEE LICENSE AT https://gsap.com/standard-license",
+    "engines": null,
+    "scripts": null,
+    "dependencies": null,
+    "peerDependencies": {
+      "gsap": "^3.12.5",
+      "react": ">=17"
+    }
+  },
+  {
+    "name": "vite",
+    "version": "8.3.5",
+    "license": "MIT",
+    "engines": {
+      "node": "^20.19.0 || >=22.12.0"
+    },
+    "scripts": {
+      "dev": "premove dist && pnpm build-bundle -w",
+      "lint": "oxlint src",
+      "build": "premove dist && pnpm build-bundle && pnpm build-types",
+      "format": "oxfmt",
+      "typecheck": "tsc && tsc -p src/node && tsc -p src/client && tsc -p src/module-runner && tsc -p src/shared && tsc -p src/node/__tests_dts__ && tsc -p src/module-runner/__tests_dts__",
+      "build-types": "pnpm build-types-roll && pnpm build-types-check",
+      "build-bundle": "rolldown --config rolldown.config.ts",
+      "generate-target": "tsx scripts/generateTarget.ts",
+      "build-types-roll": "rolldown --config rolldown.dts.config.ts",
+      "build-types-check": "tsc --project tsconfig.check.json"
+    },
+    "dependencies": {
+      "postcss": "^8.5.30",
+      "rolldown": "~1.2.14",
+      "picomatch": "^4.0.7",
+      "tinyglobby": "^0.2.17",
+      "lightningcss": "^1.33.0"
+    },
+    "peerDependencies": {
+      "tsx": "^4.8.1",
+      "jiti": ">=1.21.0",
+      "less": "^4.0.0",
+      "sass": "^1.70.0",
+      "yaml": "^2.4.2",
+      "stylus": ">=0.54.8",
+      "terser": "^5.16.0",
+      "esbuild": "^0.27.0 || ^0.28.0",
+      "sugarss": "^5.0.0",
+      "@types/node": "^20.19.0 || >=22.12.0",
+      "sass-embedded": "^1.70.0",
+      "@vitejs/devtools": "^0.7.1 || ^0.8.0"
+    }
+  },
+  {
+    "name": "@fontsource/dm-sans",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "engines": null,
+    "scripts": null,
+    "dependencies": null,
+    "peerDependencies": null
+  },
+  {
+    "name": "@fontsource/instrument-serif",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "engines": null,
+    "scripts": null,
+    "dependencies": null,
+    "peerDependencies": null
+  }
+]
