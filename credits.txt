@@ -1,0 +1,21 @@
+Leaf — Error 404, Politeknik Besut Terengganu
+A greener Earth starts with a leaf.
+
+Design: Leaf light botanical showcase, evolved from the user-supplied cinematic template. Apple HIG principles applied using the reviewed local dickwu/apple-design-skill (https://github.com/dickwu/apple-design-skill). This project is not affiliated with Apple. Original shared plant-record SVG created for this website.
+Botanical video: supplied by the user at https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260511_080827_a9e5ad52-b6ee-4e79-b393-d936f179cfd7.mp4
+Delivery is a locally rendered 4.75-second forward/reverse growth loop, with 3328×2492 desktop and 1280×958 phone sources. Opening poster extracted from the delivered video’s first frame to avoid a stage change on loading. The artwork is illustrative and does not depict a measured Leaf pilot.
+Team photographs: supplied by the team; existing approved crops retained.
+Fonts: local system UI and serif stacks; no font files are embedded or downloaded.
+React / React DOM — MIT
+Vite — MIT
+Tailwind CSS — MIT
+PostCSS / Autoprefixer — MIT
+TypeScript — Apache-2.0
+Lucide React — ISC
+GSAP — Standard GSAP License (https://gsap.com/community/standard-license/)
+
+No accounts, analytics, photo uploads, diagnosis or care requests are implemented by this concept showcase. Demo controls only change the local interface.
+
+Liquid Glass React 1.1.1 — https://github.com/rdev/liquid-glass-react — MIT. Used for navigation material. See /licenses/liquid-glass-react.txt.
+Liquid Glass Studio — https://github.com/iyinchao/liquid-glass-studio — Copyright (c) 2024 Charles Yin, MIT. Refraction, dispersion and Fresnel math adapted for the bounded video playback control. See /licenses/liquid-glass-studio.txt. This is not the full Studio editor.
+These are web interpretations of glass materials; Leaf is not affiliated with or endorsed by Apple.
